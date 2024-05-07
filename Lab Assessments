@@ -1,0 +1,9 @@
+""" Single Quote ('): In SQL, a single quote is used to denote the beginning and end of a string. 
+It tells the database that what follows is a string literal. 
+In this payload, the single quote at the beginning is closing any string that may have been opened before
+it in the SQL query.
+OR 1=1: This is the injected condition. In SQL, OR is a logical operator that returns true if any of the 
+conditions it connects are true. Here, 1=1 is always true. So, by injecting this condition, the attacker 
+is essentially saying, "return all rows" or "ignore the original condition and return all rows".
+--: In SQL, -- signifies a comment. Anything after -- on the same line is ignored by the database engine. 
+This is used to comment out the rest of the original query, preventing any syntax errors."""
